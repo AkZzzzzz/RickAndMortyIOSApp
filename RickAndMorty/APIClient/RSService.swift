@@ -16,7 +16,7 @@ final class RSService {
     private init() {}
     
     ///Отправление вызова API
-    public func execute(_ request: RMRequest, completion: @escaping -> Void) {
+    public func execute(_ request: RSRequest, completion: @escaping () -> Void) {
         
     }
 }
