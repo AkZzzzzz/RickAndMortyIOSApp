@@ -16,7 +16,11 @@ final class RSService {
     private init() {}
     
     ///Отправление вызова API
-    public func execute(_ request: RSRequest, completion: @escaping () -> Void) {
-        
+    public func execute<T: Codable>(
+        _ request: RSRequest,
+        expecting type: T.Type,
+        completion: @escaping (Result<T, Error>) -> Void
+    ) {
+
     }
 }
