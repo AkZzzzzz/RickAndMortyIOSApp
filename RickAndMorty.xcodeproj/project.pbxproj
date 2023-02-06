@@ -20,6 +20,9 @@
 		0BD5B1D4299123C00039E05E /* RSLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD5B1D3299123C00039E05E /* RSLocationViewController.swift */; };
 		0BD5B1D6299123CD0039E05E /* RSEpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD5B1D5299123CD0039E05E /* RSEpisodeViewController.swift */; };
 		0BD5B1D8299123F80039E05E /* RSSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD5B1D7299123F80039E05E /* RSSettingsViewController.swift */; };
+		0BD5B1DA29913B560039E05E /* RSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD5B1D929913B560039E05E /* RSService.swift */; };
+		0BD5B1DC29913B8A0039E05E /* RSRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD5B1DB29913B8A0039E05E /* RSRequest.swift */; };
+		0BD5B1DE299144EC0039E05E /* RSEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD5B1DD299144EC0039E05E /* RSEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		0BD5B1D3299123C00039E05E /* RSLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSLocationViewController.swift; sourceTree = "<group>"; };
 		0BD5B1D5299123CD0039E05E /* RSEpisodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSEpisodeViewController.swift; sourceTree = "<group>"; };
 		0BD5B1D7299123F80039E05E /* RSSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSettingsViewController.swift; sourceTree = "<group>"; };
+		0BD5B1D929913B560039E05E /* RSService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSService.swift; sourceTree = "<group>"; };
+		0BD5B1DB29913B8A0039E05E /* RSRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSRequest.swift; sourceTree = "<group>"; };
+		0BD5B1DD299144EC0039E05E /* RSEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,9 @@
 		0BD5B1C4299120640039E05E /* APIClient */ = {
 			isa = PBXGroup;
 			children = (
+				0BD5B1D929913B560039E05E /* RSService.swift */,
+				0BD5B1DB29913B8A0039E05E /* RSRequest.swift */,
+				0BD5B1DD299144EC0039E05E /* RSEndpoint.swift */,
 			);
 			path = APIClient;
 			sourceTree = "<group>";
@@ -230,6 +239,9 @@
 				0BD5B1CC299122B40039E05E /* Episode.swift in Sources */,
 				0BD5B1C82991226F0039E05E /* Location.swift in Sources */,
 				0BD5B1CA299122A10039E05E /* Character.swift in Sources */,
+				0BD5B1DA29913B560039E05E /* RSService.swift in Sources */,
+				0BD5B1DE299144EC0039E05E /* RSEndpoint.swift in Sources */,
+				0BD5B1DC29913B8A0039E05E /* RSRequest.swift in Sources */,
 				0BD5B1D6299123CD0039E05E /* RSEpisodeViewController.swift in Sources */,
 				0BD5B1A929911C9F0039E05E /* AppDelegate.swift in Sources */,
 				0BD5B1AB29911C9F0039E05E /* SceneDelegate.swift in Sources */,
