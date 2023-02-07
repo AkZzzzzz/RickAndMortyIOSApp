@@ -27,6 +27,7 @@
 		0BD5B1E229914EB90039E05E /* RSSingleLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD5B1E129914EB90039E05E /* RSSingleLocation.swift */; };
 		0BD5B1E4299152900039E05E /* RSCharacterStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD5B1E3299152900039E05E /* RSCharacterStatus.swift */; };
 		0BD5B1E6299152D60039E05E /* RSCharacterGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD5B1E5299152D60039E05E /* RSCharacterGender.swift */; };
+		0BD5B1EA29923FB50039E05E /* RSGetCharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD5B1E929923FB50039E05E /* RSGetCharactersResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		0BD5B1E129914EB90039E05E /* RSSingleLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSingleLocation.swift; sourceTree = "<group>"; };
 		0BD5B1E3299152900039E05E /* RSCharacterStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSCharacterStatus.swift; sourceTree = "<group>"; };
 		0BD5B1E5299152D60039E05E /* RSCharacterGender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSCharacterGender.swift; sourceTree = "<group>"; };
+		0BD5B1E929923FB50039E05E /* RSGetCharactersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSGetCharactersResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,13 +110,8 @@
 		0BD5B1C029911FFF0039E05E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0BD5B1C72991226F0039E05E /* RSLocation.swift */,
-				0BD5B1C9299122A10039E05E /* RSCharacter.swift */,
-				0BD5B1CB299122B40039E05E /* RSEpisode.swift */,
-				0BD5B1DF29914DC70039E05E /* RSOrigin.swift */,
-				0BD5B1E129914EB90039E05E /* RSSingleLocation.swift */,
-				0BD5B1E3299152900039E05E /* RSCharacterStatus.swift */,
-				0BD5B1E5299152D60039E05E /* RSCharacterGender.swift */,
+				0BD5B1E829923F6F0039E05E /* APIResponseTypes */,
+				0BD5B1E729923F440039E05E /* DataTypes */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -171,6 +168,28 @@
 				0BD5B1D7299123F80039E05E /* RSSettingsViewController.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		0BD5B1E729923F440039E05E /* DataTypes */ = {
+			isa = PBXGroup;
+			children = (
+				0BD5B1C72991226F0039E05E /* RSLocation.swift */,
+				0BD5B1C9299122A10039E05E /* RSCharacter.swift */,
+				0BD5B1CB299122B40039E05E /* RSEpisode.swift */,
+				0BD5B1DF29914DC70039E05E /* RSOrigin.swift */,
+				0BD5B1E129914EB90039E05E /* RSSingleLocation.swift */,
+				0BD5B1E3299152900039E05E /* RSCharacterStatus.swift */,
+				0BD5B1E5299152D60039E05E /* RSCharacterGender.swift */,
+			);
+			path = DataTypes;
+			sourceTree = "<group>";
+		};
+		0BD5B1E829923F6F0039E05E /* APIResponseTypes */ = {
+			isa = PBXGroup;
+			children = (
+				0BD5B1E929923FB50039E05E /* RSGetCharactersResponse.swift */,
+			);
+			path = APIResponseTypes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +265,7 @@
 				0BD5B1B329911C9F0039E05E /* RickAndMorty.xcdatamodeld in Sources */,
 				0BD5B1E6299152D60039E05E /* RSCharacterGender.swift in Sources */,
 				0BD5B1E229914EB90039E05E /* RSSingleLocation.swift in Sources */,
+				0BD5B1EA29923FB50039E05E /* RSGetCharactersResponse.swift in Sources */,
 				0BD5B1D4299123C00039E05E /* RSLocationViewController.swift in Sources */,
 				0BD5B1CF299123900039E05E /* RSCharacterViewController.swift in Sources */,
 				0BD5B1AD29911C9F0039E05E /* RSTabVBarController.swift in Sources */,

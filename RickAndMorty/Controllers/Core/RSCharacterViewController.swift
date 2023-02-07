@@ -15,17 +15,16 @@ final class RSCharacterViewController: UIViewController {
         view.backgroundColor = .systemBackground
         title = "Characters"
         
-        let request = RSRequest(endpoint: .character, pathComponents: [], queryParameters: [
-            URLQueryItem(name: "name", value: "rick"),
-            URLQueryItem(name: "status", value: "alive")
-        ])
-        
-        print(request.url)
-        
-        RSService.share.execute(request, expecting: RSCharacter.self) { result in
-        
+        RSService.share.execute(.listCharactersRequest, expecting: RSGetAllCharactersResponse.self) { result in
+            switch result {
+            case .success(let model):
+                print("Total: "+String(model.info.count))
+                print("Paage result count: "+String(model.results.count))
+
+            case .failure(let error):
+                print(String(describing: error))
+            }
         }
    }
-    
-    
+   
 }

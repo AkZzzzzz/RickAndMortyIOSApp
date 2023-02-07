@@ -11,5 +11,14 @@ enum RSCharacterGender: String, Codable {
     case female = "Female"
     case male = "Male"
     case genderless = "Genderless"
-    case `unknown` = "Unknown"
+    case `unknown` = "unknown"
+       
+    var text : String {
+        switch self {
+            case .female, .male, .genderless:
+                return rawValue
+            case .unknown:
+                return "Unknown"
+        }
+    }
 }

@@ -14,7 +14,7 @@ final class RSRequest {
     }
     private let endpoint: RSEndpoint
     
-    private let pathComponents: Set<String>
+    private let pathComponents: [String]
     
     private let queryParameters: [URLQueryItem]
     
@@ -46,9 +46,14 @@ final class RSRequest {
     
     public let httpMethod = "GET"
     
-    public init(endpoint: RSEndpoint, pathComponents: Set<String> = [], queryParameters: [URLQueryItem] = []) {
+    public init(endpoint: RSEndpoint, pathComponents: [String] = [], queryParameters: [URLQueryItem] = []) {
         self.endpoint = endpoint
         self.pathComponents = pathComponents
         self.queryParameters = queryParameters
     }
+    
+}
+
+extension RSRequest {
+    static let listCharactersRequest = RSRequest(endpoint: .character)
 }
