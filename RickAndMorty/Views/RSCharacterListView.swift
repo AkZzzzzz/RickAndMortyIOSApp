@@ -7,7 +7,16 @@
 
 import UIKit
 
+protocol RSCharacterListViewDelegate: AnyObject {
+    func rsCharacterListView(
+        _ characterListView: RSCharacterListView,
+        didSelectCharacter character: RSCharacter
+    )
+}
+
 final class RSCharacterListView: UIView {
+    
+    public weak var delegate: RSCharacterListViewDelegate?
     
     private let viewModel = RSCharacterListViewViewModel()
     
@@ -21,7 +30,7 @@ final class RSCharacterListView: UIView {
     private let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
-        layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 10, right: 10)
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.isHidden = true
         collectionView.alpha = 0
@@ -68,6 +77,10 @@ final class RSCharacterListView: UIView {
 }
 
 extension RSCharacterListView: RSCharacterListViewViewModelDelegate {
+    func didSelectCharacter(_ character: RSCharacter) {
+        delegate?.rsCharacterListView(self, didSelectCharacter: character)
+    }
+    
     func didLoadInitialCharacters() {
         collectionView.reloadData()
         spinner.stopAnimating()

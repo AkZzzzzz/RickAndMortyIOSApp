@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class RSCharacterViewController: UIViewController {
+final class RSCharacterViewController: UIViewController, RSCharacterListViewDelegate {
     
     private let characterListView = RSCharacterListView()
 
@@ -20,6 +20,7 @@ final class RSCharacterViewController: UIViewController {
    }
    
     private func setUpView() {
+        characterListView.delegate = self
         view.addSubview(characterListView)
         NSLayoutConstraint.activate([
             characterListView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
@@ -27,5 +28,11 @@ final class RSCharacterViewController: UIViewController {
             characterListView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
             characterListView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
         ])
+    }
+    func rsCharacterListView(_ characterListView: RSCharacterListView, didSelectCharacter character: RSCharacter) {
+        let viewModel = RSCharacterDetailViewViewModel(character: character)
+        let detailVC = RSCharacterDetailViewController(viewModel: viewModel)
+        detailVC.navigationItem.largeTitleDisplayMode = .never
+        navigationController?.pushViewController(detailVC, animated: true)
     }
 }
