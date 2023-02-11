@@ -30,6 +30,7 @@ final class RSService {
             completion(.failure(RSServiceError.failedToCreateRequest))
             return
         }
+      
         let task = URLSession.shared.dataTask(with: urlRequest) { data, _, error in
             guard let data = data, error == nil else {
                 completion(.failure(error ?? RSServiceError.failedToGetData))
