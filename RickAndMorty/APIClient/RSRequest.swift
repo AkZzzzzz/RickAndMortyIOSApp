@@ -62,8 +62,15 @@ final class RSRequest {
             let components = trimmed.components(separatedBy: "/")
             if !components.isEmpty {
                 let endpointString = components[0]
-                if let rsEndpoint = RSEndpoint(rawValue: endpointString) {
-                    self.init(endpoint: rsEndpoint)
+                var pathComponents: [String] = []
+                if components.count > 1 {
+                    pathComponents = components
+                    pathComponents.removeFirst()
+                }
+                if let rsEndpoint = RSEndpoint(
+                    rawValue: endpointString
+                ) {
+                    self.init(endpoint: rsEndpoint, pathComponents: pathComponents)
                     return
                 }
             }
