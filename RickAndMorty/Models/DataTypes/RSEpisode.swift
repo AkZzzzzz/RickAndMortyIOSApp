@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct RSEpisode: Codable {
+struct RSEpisode: Codable, RSEpisodeDataRender {
     let id: Int
     let name: String
     let air_date: String

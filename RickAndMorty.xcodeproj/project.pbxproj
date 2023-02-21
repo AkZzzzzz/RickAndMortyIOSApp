@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B0A761429A515530001749F /* RSEpisodeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0A761329A515530001749F /* RSEpisodeDetailViewController.swift */; };
 		0B6CA9BC2996514700234014 /* RSCharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6CA9BB2996514700234014 /* RSCharacterDetailViewController.swift */; };
 		0B6CA9BE299652E100234014 /* RSCharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6CA9BD299652E100234014 /* RSCharacterDetailView.swift */; };
 		0B6CA9C02996532A00234014 /* RSCharacterDetailViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6CA9BF2996532A00234014 /* RSCharacterDetailViewViewModel.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B0A761329A515530001749F /* RSEpisodeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSEpisodeDetailViewController.swift; sourceTree = "<group>"; };
 		0B6CA9BB2996514700234014 /* RSCharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSCharacterDetailViewController.swift; sourceTree = "<group>"; };
 		0B6CA9BD299652E100234014 /* RSCharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSCharacterDetailView.swift; sourceTree = "<group>"; };
 		0B6CA9BF2996532A00234014 /* RSCharacterDetailViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSCharacterDetailViewViewModel.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				0B6CA9BB2996514700234014 /* RSCharacterDetailViewController.swift */,
+				0B0A761329A515530001749F /* RSEpisodeDetailViewController.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				0BD5B1F22993C9760039E05E /* RSCharacterCollectionViewCell.swift in Sources */,
 				0BD5B1A929911C9F0039E05E /* AppDelegate.swift in Sources */,
 				0BBB6EA929A0B86F007268FF /* RSCharacterPhotoCollectionViewCellViewModel.swift in Sources */,
+				0B0A761429A515530001749F /* RSEpisodeDetailViewController.swift in Sources */,
 				0BD5B1E4299152900039E05E /* RSCharacterStatus.swift in Sources */,
 				0BD5B1EC299253E90039E05E /* RSCharacterListViewViewModel.swift in Sources */,
 				0B6CA9C02996532A00234014 /* RSCharacterDetailViewViewModel.swift in Sources */,
