@@ -9,11 +9,10 @@ import UIKit
 
 final class RSEpisodeDetailViewController: UIViewController {
 
-    private let url: URL?
+    private let viewModel: RSEpisodeDetailViewViewModel
     
     init(url: URL?) {
-        self.url = url
-        
+        self.viewModel = .init(endpointUrl: url)
         super.init(nibName: nil, bundle: nil)
     }
     

@@ -14,7 +14,8 @@ protocol RSEpisodeDataRender{
 
 }
 
-final class RSCharacterEpisodeCollectionViewCellViewModel {
+final class RSCharacterEpisodeCollectionViewCellViewModel: Hashable, Equatable {
+    
     private let episodeDataUrl: URL?
     private var isFetching = false
     private var dataBlock: ((RSEpisodeDataRender) -> Void)?
@@ -65,5 +66,12 @@ final class RSCharacterEpisodeCollectionViewCellViewModel {
 
             }
         }
+    }
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(self.episodeDataUrl?.absoluteString ?? "")
+    }
+    
+    static func == (lhs: RSCharacterEpisodeCollectionViewCellViewModel, rhs: RSCharacterEpisodeCollectionViewCellViewModel) -> Bool {
+        return lhs.hashValue == rhs.hashValue
     }
 }

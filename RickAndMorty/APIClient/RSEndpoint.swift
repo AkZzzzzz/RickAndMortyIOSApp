@@ -7,7 +7,7 @@
 
 import Foundation
 
-@frozen enum RSEndpoint: String {
+@frozen enum RSEndpoint: String, CaseIterable, Hashable {
     case character
     case location
     case episode

@@ -12,7 +12,7 @@ final class RSRequest {
     private struct Constants {
         static let baseUrl = "https://rickandmortyapi.com/api"
     }
-    private let endpoint: RSEndpoint
+    let endpoint: RSEndpoint
     
     private let pathComponents: [String]
     
@@ -102,4 +102,5 @@ final class RSRequest {
 
 extension RSRequest {
     static let listCharactersRequest = RSRequest(endpoint: .character)
+    static let listEpisodesRequest = RSRequest(endpoint: .episode)
 }
